@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]</xpath>
+
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]/prerequisites</xpath>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]</xpath>
+
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]</xpath>
+            <value>
+                <prerequisites>
+                    <li>ChemfuelRefining</li>
+                </prerequisites>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]</xpath>
+
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]/researchViewX</xpath>
+            <value>
+                <researchViewX>1</researchViewX>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]</xpath>
+        
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]/researchViewY</xpath>
+            <value>
+                <researchViewY>2</researchViewY>
+            </value>
+        </match>
+    </Operation>
+</Patch>

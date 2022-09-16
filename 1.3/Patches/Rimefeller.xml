@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimefeller</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+                <!-- Oil wells-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="OilDrilling"]/baseCost</xpath>
+					<value>
+						<baseCost>1000</baseCost>
+					</value>
+				</li>
+
+                <!-- Deep Oil Wells-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="DeepOilWells"]/baseCost</xpath>
+					<value>
+						<baseCost>2500</baseCost>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="DeepOilWells"]/researchViewX</xpath>
+					<value>
+						<researchViewX>4</researchViewX>
+					</value>	
+				</li>
+
+                <!-- Neutroamine Production -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="NeutroamineProduction"]/baseCost</xpath>
+					<value>
+						<baseCost>500</baseCost>
+					</value>	
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName="NeutroamineProduction"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="NeutroamineProduction"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>ChemfuelRefining</li>
+                        </prerequisites>
+                    </value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="NeutroamineProduction"]/researchViewX</xpath>
+					<value>
+						<researchViewX>4</researchViewX>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="NeutroamineProduction"]/researchViewY</xpath>
+					<value>
+						<researchViewY>1</researchViewY>
+					</value>	
+				</li>
+
+                <!-- Napalm -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName="Napalm"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="Napalm"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>ChemfuelRefining</li>
+                        </prerequisites>
+                    </value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="Napalm"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2</researchViewX>
+					</value>	
+				</li>
+
+                <!-- Synthread Production -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthreadProduction"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthreadProduction"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>ChemfuelRefining</li>
+                        </prerequisites>
+                    </value>
+				</li>
+
+                <!-- Synthylene Production -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthyleneProduction"]/baseCost</xpath>
+					<value>
+						<baseCost>500</baseCost>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthyleneProduction"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2</researchViewX>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthyleneProduction"]/researchViewY</xpath>
+					<value>
+						<researchViewY>4</researchViewY>
+					</value>	
+				</li>
+
+                <!-- Synthamide Production -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideProduction"]/baseCost</xpath>
+					<value>
+						<baseCost>1500</baseCost>
+					</value>	
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideProduction"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideProduction"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>ChemfuelRefining</li>
+                        </prerequisites>
+                    </value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideProduction"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2</researchViewX>
+					</value>	
+				</li>
+
+                <!-- Synthamide Composite Production -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideCompositeProduction"]/baseCost</xpath>
+					<value>
+						<baseCost>2500</baseCost>
+					</value>	
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideCompositeProduction"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideCompositeProduction"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>SynthyleneProduction</li>
+                            <li>SynthamideProduction</li>
+                        </prerequisites>
+                    </value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideCompositeProduction"]/researchViewX</xpath>
+					<value>
+						<researchViewX>3</researchViewX>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="SynthamideCompositeProduction"]/researchViewY</xpath>
+					<value>
+						<researchViewY>3</researchViewY>
+					</value>	
+				</li>
+
+                <!-- Hyperweave Production -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="HyperweaveProduction"]/baseCost</xpath>
+					<value>
+						<baseCost>2500</baseCost>
+					</value>	
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName="HyperweaveProduction"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="HyperweaveProduction"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>ChemfuelRefining</li>
+                        </prerequisites>
+                    </value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="HyperweaveProduction"]/researchViewX</xpath>
+					<value>
+						<researchViewX>4</researchViewX>
+					</value>	
+				</li>
+
+                <!-- Plasteel Production -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="PlasteelProduction"]/baseCost</xpath>
+					<value>
+						<baseCost>2000</baseCost>
+					</value>	
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName="PlasteelProduction"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="PlasteelProduction"]</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>SynthyleneProduction</li>
+                        </prerequisites>
+                    </value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="PlasteelProduction"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2</researchViewX>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="PlasteelProduction"]/researchViewY</xpath>
+					<value>
+						<researchViewY>5</researchViewY>
+					</value>	
+				</li>
+
+				<!-- Artificial Flooring -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="ArtificialFloors"]/baseCost</xpath>
+					<value>
+						<baseCost>500</baseCost>
+					</value>	
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

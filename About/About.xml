@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Rimefeller Research Tweaks</name>
+    <author>UntouchedWagons</author>
+    <url>www.anything.com</url>
+    <packageId>UntouchedWagons.Rimefeller.RimefellerResearchTweaks</packageId>
+    <supportedVersions>
+        <li>1.3</li>
+    </supportedVersions>
+
+    <description>This is a simple research tweak mod that makes some of the Rimefeller researches less linear, mainly the researches that unlock material producing machines like Synthamide and Synthread.</description>
+
+    <modDependencies>
+        <li>
+            <packageId>Dubwise.Rimefeller</packageId>
+            <displayName>Rimefeller</displayName>
+            <downloadUrl>https://github.com/Dubwise56/Rimefeller/wiki</downloadUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/1321849735</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Dubwise.Rimefeller</li>
+    </loadAfter>
+</ModMetaData>
