@@ -231,6 +231,18 @@
 						<baseCost>500</baseCost>
 					</value>	
 				</li>
+
+                <!-- Refinery unloading bay -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="RefineryLoadingBay"]/researchPrerequisites</xpath>
+					<value>
+						<li>SynthreadProduction</li>
+						<li>SynthamideProduction</li>
+						<li>Napalm</li>
+						<li>HyperweaveProduction</li>
+						<li>NeutroamineProduction</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

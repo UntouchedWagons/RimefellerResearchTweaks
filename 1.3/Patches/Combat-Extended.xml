@@ -39,4 +39,14 @@
             </value>
         </match>
     </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="CE_FsxProduction"]</xpath>
+        
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="RefineryLoadingBay"]/researchPrerequisites</xpath>
+            <value>
+                <li>CE_FsxProduction</li>
+            </value>
+        </match>
+    </Operation>
 </Patch>

@@ -39,6 +39,12 @@ Synthylene Components and Advanced Synthylene Components have not been altered
 
 For all you Combat Extended enjoyers the FSX Refinery is also supported, its tech prerequisites has been changed to Chemfuel Refining. No other changes have been made.
 
+## Changelog
+
+# October 4, 2022
+
+* The Refinery Unloading Bay building is unlocked via all appropriate researches (Hyperweave, Napalm, FSX, etc), not just by the Synthylene research
+
 ## Thanks
 
 Thanks to crazedmonkey231, Bratwurstinator and Large Moron of Mr. Samuel Streamer's discord server for helping me make my first Rimworld mod.
