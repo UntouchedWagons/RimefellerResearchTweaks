@@ -41,9 +41,13 @@ For all you Combat Extended enjoyers the FSX Refinery is also supported, its tec
 
 ## Changelog
 
-# October 4, 2022
+### October 4, 2022
 
 * The Refinery Unloading Bay building is unlocked via all appropriate researches (Hyperweave, Napalm, FSX, etc), not just by the Synthylene research
+
+### October 19, 2022
+
+* Marked Rimworld 1.4 as supported
 
 ## Thanks
 
