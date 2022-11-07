@@ -48,6 +48,10 @@ For all you Combat Extended enjoyers the FSX Refinery is also supported, its tec
 ### October 19, 2022
 
 * Marked Rimworld 1.4 as supported
+  
+### November 6, 2022
+
+* Refinery Unloading Bay is now unlocked via the Chemfuel Refining tech instead of Synthylene, Napalm, Neutroamine, etc since all Refinery techs would need to be researched before the unloading bay would be unlocked
 
 ## Thanks
 
