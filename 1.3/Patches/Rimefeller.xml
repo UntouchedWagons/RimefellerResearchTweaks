@@ -74,7 +74,13 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ResearchProjectDef[defName="Napalm"]/researchViewX</xpath>
 					<value>
-						<researchViewX>2</researchViewX>
+						<researchViewX>1</researchViewX>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="Napalm"]/researchViewY</xpath>
+					<value>
+						<researchViewY>2</researchViewY>
 					</value>	
 				</li>
 
@@ -152,6 +158,7 @@
                         <prerequisites>
                             <li>SynthyleneProduction</li>
                             <li>SynthamideProduction</li>
+							<li>Autoclave</li>
                         </prerequisites>
                     </value>
 				</li>
@@ -208,6 +215,7 @@
                     <value>
                         <prerequisites>
                             <li>SynthyleneProduction</li>
+							<li>Autoclave</li>
                         </prerequisites>
                     </value>
 				</li>
@@ -238,6 +246,16 @@
 					<value>
 						<researchPrerequisites>
 							<li>ChemfuelRefining</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+                <!-- Autoclave -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Autoclave"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Autoclave</li>
 						</researchPrerequisites>
 					</value>
 				</li>

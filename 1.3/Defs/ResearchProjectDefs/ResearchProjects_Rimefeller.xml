@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Autoclave</defName>
+    <label>Autoclave</label>
+    <tab>Rimefeller</tab>
+    <description>Autoclave.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+  
+</Defs>
